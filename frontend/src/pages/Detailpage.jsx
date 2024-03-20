@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import './Detailpage.css'
 import jsonData from '../data/data.json'
 import { Card } from "../components/Card";
+import HeaderGuest from '../components/HeaderGuest'
 
 const DetailPage = () => {
   const { title } = useParams();
@@ -14,6 +15,8 @@ const DetailPage = () => {
 
   const {imageUrl, description} = card;
   return (
+    <>
+    <HeaderGuest />
     <main>
       <Card title={title} imageUrl={imageUrl} />
       <div className="main-right">
@@ -22,6 +25,7 @@ const DetailPage = () => {
         <button className="reserva">Reservar</button>
       </div>
     </main>
+    </>
   );
 };
 
