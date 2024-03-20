@@ -1,5 +1,6 @@
 import "./App.css";
-import Router from "react-router-dom";
+import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import TimeTable from "./pages/TimeTable";
 
 function App() {
   return (
@@ -10,8 +11,13 @@ function App() {
       <Link to="/register">Register</Link>
       <Link to="/nombresala">Detalle Sala</Link>  
       <Link to="/reservas">Pagina reserva</Link>
-      <Link to="/horario">Horario</Link>
+      <Link to="/TimeTable">Horario</Link>
       <Link to="/misreservas">Mis Reservas</Link>
+
+      <Routes>
+        <Route path="/" element={<h1>HomePage</h1>} />
+        <Route path="/TimeTable" element={<TimeTable />}  />
+      </Routes>
     </Router>
   );
 }
