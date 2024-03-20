@@ -46,7 +46,7 @@ const TimeTable = () => {
     const classes = ['Tenis', 'Pádel', 'Spinning', 'Zumba', 'Natación'];
 
     return (
-        <div>
+        <div className="container">
             <h1 className="encabezado-horario">Horario de nuestras instalaciones</h1>
             <p className="horario">Abierto todos los días de 09:00 a 23:00</p>
             <table>
