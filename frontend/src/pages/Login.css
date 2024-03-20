@@ -1,0 +1,11 @@
+.app-container {
+    background-color: #AFCBFF;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 50rem;
+    font-size: 16px;
+    
+}
+

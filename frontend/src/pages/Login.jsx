@@ -1,26 +1,25 @@
 import { useState } from 'react';
-import { useAuthenticationContext } from '../../../middleware/context/AuthenticationContext';
 import { useNavigate } from 'react-router-dom';
-
+import './Login.css';
+import HeaderGuest from '../components/HeaderGuest';
 const Login = () => {
     //State for email and password
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     
-    const { login } = useAutheticationContext();
-    const navigate = useNavigate();
+       const navigate = useNavigate();
 
     //Handle form submission
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         try{
-            const loginSuccess = await login({ email: email, password: password });
-            if (loginSucces) {
+            const loginSuccess = await Login({ email: email, password: password });
+            if (loginSuccess) {
                 setEmail('');
                 setPassword('');
-                navigate("/members", { state: { msg: "Login successful" } });
+                navigate("/", { state: { msg: "Inicio de sesión correcto" } });
             }
         } 
         catch (err) {
@@ -29,6 +28,9 @@ const Login = () => {
     };
     
     return (
+        <div>
+        <HeaderGuest />
+        
         <form onSubmit={handleSubmit} className="Form">
 
             <label htmlFor="email">Correo electrónico</label>
@@ -49,7 +51,9 @@ const Login = () => {
                 required
                 />
         </form>
+    </div>
     );
 };
+
 
 export default Login;
