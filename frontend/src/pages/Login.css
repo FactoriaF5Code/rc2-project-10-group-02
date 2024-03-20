@@ -1,11 +1,19 @@
-.app-container {
-    background-color: #AFCBFF;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
+
+.formulario {
+    width: 548px;
+    height: 48px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30%;
+    position: relative;
+    border-radius: 20%;
+    box-shadow: none;
     align-items: center;
-    gap: 50rem;
-    font-size: 16px;
-    
+    text-align: center;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
 

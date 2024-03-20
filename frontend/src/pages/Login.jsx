@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Login.css';
+import "./Login.css";
 import HeaderGuest from '../components/HeaderGuest';
+
 const Login = () => {
     //State for email and password
     const [email, setEmail] = useState('');
@@ -28,10 +29,11 @@ const Login = () => {
     };
     
     return (
+        
         <div>
         <HeaderGuest />
         
-        <form onSubmit={handleSubmit} className="Form">
+        <form onSubmit={handleSubmit} className="formulario">
 
             <label htmlFor="email">Correo electrónico</label>
             <input
@@ -42,7 +44,7 @@ const Login = () => {
                 required
                 />
 
-<label htmlFor="password">Contraseña</label>
+            <label htmlFor="password">Contraseña</label>
             <input
                 type="password"
                 id="password"
@@ -52,6 +54,7 @@ const Login = () => {
                 />
         </form>
     </div>
+    
     );
 };
 
