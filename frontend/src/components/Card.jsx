@@ -6,7 +6,7 @@ export const Card = ({ title, imageUrl }) => {
   const isDetailPage = location.pathname.startsWith("/detail");
   return (
     <div className="card-container">
-    {!isDetailPage && ( // Muestra la div solo si no estás en la página de detalles
+    {!isDetailPage && (
       <div className="card-text">
         <div className="background"></div>
         <p>{title}</p>
