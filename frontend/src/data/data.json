@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Canchas de Pádel",
+    "imageUrl": "../public/foto01.png",
+    "description": "Disfruta de nuestras modernas y bien cuidadas canchas de pádel. ¡Ideal para divertirse con amigos y familiares!"
+  },
+  {
+    "title": "Canchas de Fútbol",
+    "imageUrl": "../public/foto02.png",
+    "description": "Ven a jugar al fútbol en nuestras campos de última generación. ¡La diversión está garantizada!"
+  },
+  {
+    "title": "Gimnasio",
+    "imageUrl": "../public/foto03.png",
+    "description": "Ponte en forma en nuestro gimnasio completamente equipado. ¡Aprovecha nuestras clases y entrenamientos personalizados!"
+  },
+  {
+    "title": "Piscina",
+    "imageUrl": "../public/foto04.png",
+    "description": "Relájate y disfruta en nuestra piscina climatizada. ¡Perfecta para escapar del calor del verano!"
+  },
+  {
+    "title": "Canchas de Tenis",
+    "imageUrl": "../public/foto05.png",
+    "description": "Mejora tu juego en nuestras pistas de tenis profesionales. ¡Reserva tu hora y empieza a jugar!"
+  },
+  {
+    "title": "Sala Polivalente",
+    "imageUrl": "../public/foto06.png",
+    "description": "Utiliza nuestra sala polivalente para eventos, clases y mucho más. ¡El lugar perfecto para tus necesidades!"
+  },
+  {
+    "title": "Zona Relax",
+    "imageUrl": "../public/foto07.png",
+    "description": "Desconecta y relájate en nuestra zona de spa. ¡Disfruta de masajes, sauna y mucho más!"
+  },
+  {
+    "title": "Recepción",
+    "imageUrl": "../public/foto08.png",
+    "description": "Nuestro personal de recepción estará encantado de ayudarte con cualquier pregunta o solicitud. ¡No dudes en acercarte!"
+  },
+  {
+    "title": "Tienda",
+    "imageUrl": "../public/foto09.png",
+    "description": "Encuentra todo lo que necesitas en nuestra tienda. ¡Desde equipamiento deportivo hasta snacks y bebidas!"
+  },
+  {
+    "title": "Cafetería",
+    "imageUrl": "../public/foto10.png",
+    "description": "Recarga energías en nuestra acogedora cafetería. ¡Disfruta de café, té, repostería y mucho más!"
+  }
+]
