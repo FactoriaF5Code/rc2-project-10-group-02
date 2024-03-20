@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta esto según tus necesidades */
+    text-align: center;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(175, 203, 255, 1);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(244, 247, 245, 1);
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgba(175, 203, 255, 1); 
+    color: white;
+}
+
+.encabezado-horario {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+.horario{
+    font-size: 25px;
+    margin-bottom: 20px; 
+}
