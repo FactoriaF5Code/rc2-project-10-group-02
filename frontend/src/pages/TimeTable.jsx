@@ -1,4 +1,5 @@
 import "../Styles/TimeTable.css";
+import HeaderGuest from "../components/HeaderGuest";
 
 const TimeTable = () => {
     const schedule = {
@@ -46,6 +47,8 @@ const TimeTable = () => {
     const classes = ['Tenis', 'Pádel', 'Spinning', 'Zumba', 'Natación'];
 
     return (
+        <>
+        <HeaderGuest />
         <div className="container">
             <h1 className="encabezado-horario">Horario de nuestras instalaciones</h1>
             <p className="horario">Abierto todos los días de 09:00 a 23:00</p>
@@ -70,6 +73,7 @@ const TimeTable = () => {
                 </tbody>
             </table>
         </div>
+        </>
     );
 };
 
