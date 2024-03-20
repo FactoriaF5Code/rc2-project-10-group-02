@@ -44,9 +44,13 @@ export const Reserves = () => {
                             calendarClassName="customCalendar" // Clase CSS personalizada para el calendario
                             popperClassName="customPopper" // Clase CSS personalizada para el popper del calendario
                         />
+
                     </label>
+                    <div className="reservas">
+                        <button><Link to="/reserve" >Reservar</Link> </button>
+                    </div>
                 </form>
-                <button><Link to="/Reservar" className="reservar">reservar</Link> </button>
+
             </main>
         </>
     );
