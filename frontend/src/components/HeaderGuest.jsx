@@ -8,7 +8,7 @@ function HeaderGuest() {
             <section className="selection">
                 <img className="logo" src="../../public/fituplogo.svg" alt="logo" />
                 <Link to="/" className="access">Nuestras instalaciones</Link>
-                <Link to="/horario" className="access">Horarios</Link>
+                <Link to="/TimeTable" className="access">Horarios</Link>
                 <Link to="/reservas" className="access">Reservas</Link>
             </section>
             <section>

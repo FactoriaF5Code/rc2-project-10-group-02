@@ -8,7 +8,7 @@ function HeaderLoggedIn() {
             <section>
                 <img src="../assets/fituplogo.svg" alt="logo" />
                 <Link to="/">Nuestras instalaciones</Link>
-                <Link to="/horario">Horarios</Link>
+                <Link to="/TimeTable">Horarios</Link>
                 <Link to="/reservas">Reservas</Link>
             </section>
             <section>
