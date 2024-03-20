@@ -1,12 +1,8 @@
-import HeaderGuest from "../components/HeaderGuest"
+import { HomepageMain } from '../components/HomepageMain'
+import './Homepage.css'
 
-const Homepage = () => {
-  return (<main>
-    <HeaderGuest />
-    <div>Homepage</div>
-  </main>
+export const Homepage = () => {
+  return (
+    <HomepageMain/>
   )
 }
-
-export default Homepage;
-

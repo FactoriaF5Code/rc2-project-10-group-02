@@ -1,18 +1,24 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
-    outline: none;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: Inter;
 }
 
 html {
   font-size: 62.5%;
 }
 
-:root{
-    --black: #000;
-    --white: #fff;
-    --myfont: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+:root {
+  --white: #f4f7f5;
+  --cream: #ffede1;
+  --yellow: #F9FBF2;
+  --lightblue: #D7F9FF;
+  --blue: #afcbff;
+  --darkblue: #0e1c36;
+  --black: #222823;
+  --myfont: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
