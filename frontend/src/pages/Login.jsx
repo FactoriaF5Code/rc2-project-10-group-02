@@ -20,7 +20,7 @@ const Login = () => {
             if (loginSucces) {
                 setEmail('');
                 setPassword('');
-                navigate("/members", { state: { msg: "Login successful" } });
+                navigate("/members", { state: { msg: "Inicio de sesión satisfactorio" } });
             }
         } 
         catch (err) {
@@ -31,7 +31,7 @@ const Login = () => {
     return (
         <form onSubmit={handleSubmit} className="Form">
 
-            <label htmFor="email">Email:</label>
+            <label htmFor="email">Correo electrónico</label>
             <input
                 type="email"
                 id="email"
@@ -40,7 +40,7 @@ const Login = () => {
                 required
                 />
 
-<label htmFor="email">Email:</label>
+<label htmFor="password">Contraseña</label>
             <input
                 type="password"
                 id="password"
