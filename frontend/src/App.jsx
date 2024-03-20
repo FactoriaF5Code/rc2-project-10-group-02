@@ -2,7 +2,7 @@ import "./App.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import TimeTable from "./pages/TimeTable";
 import { Homepage } from "./pages/Homepage";
-import Reserves from "./pages/Reserves";
+import { Reserves } from "./pages/Reserves";
 
 function App() {
   return (

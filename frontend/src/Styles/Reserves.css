@@ -1,0 +1,65 @@
+main {
+    width: auto;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.chooseSala {
+    width: 50rem;
+    height: 3rem;
+}
+
+.chooseSalaButton {
+    background-color: var(--blue);
+    width: 100%;
+    height: 3rem;
+}
+
+.datePicker {
+    background-color: var(--blue);
+    width: 50rem;
+    height: 3rem;
+}
+
+.customDatePicker {
+    background-color: var(--blue);
+    width: 50rem;
+    height: 3rem;
+}
+
+.customDatePickerWrapper {
+    width: 50rem;
+}
+
+.customPopper {
+    border: solid 10px var(--blue);
+}
+
+.reservar  {
+    margin: 2rem auto;
+    width: 20rem;
+    height: 6rem;
+    background-color: var(--darkblue);
+    color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.reservar:hover {
+    transform: scale(1.1);
+}

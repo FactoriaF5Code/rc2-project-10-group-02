@@ -44,10 +44,20 @@ header {
 }
 
 .loggin-buttons button {
+margin: 2rem auto;
     width: 20rem;
     height: 6rem;
-    background-color: #0e1c36;
+    background-color: var(--darkblue);
+    color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
     border-radius: 1rem;
     font-size: 1.8rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.loggin-buttons button:hover {
+    transform: scale(1.1);
 }
