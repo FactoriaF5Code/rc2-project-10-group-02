@@ -1,19 +1,100 @@
+  :root {
+    --white: #f4f7f5;
+    --cream: #ffede1;
+    --yellow: #F9FBF2;
+    --lightblue: #D7F9FF;
+    --blue: #afcbff;
+    --darkblue: #0e1c36;
+    --black: #222823;
+    --myfont: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
 
-.formulario {
-    width: 548px;
-    height: 48px;
-    margin: auto;
-    margin-top: 100px;
-    padding: 30%;
-    position: relative;
-    border-radius: 20%;
-    box-shadow: none;
-    align-items: center;
-    text-align: center;
-    color: black;
-    flex-direction: column;
+
+  :root {
+    --color-titulo: #afcbff;
+    --color-border-input: #030303;
+    --color-enlace: #ef4242;;
+}
+.root {
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 15px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+
+    
+}
+.form {
+    padding: 150px;
+    padding-top: 150px;
+    text-align:left;
+    letter-spacing: 1.1px;
+    border-radius: 20px;
+    width: 50%;
+    height: 30;
+    color:#0e1c36;
+    font-size: 12px;
+    size: 15px;
+    margin-top: 300px;
+    cursor: pointer;
+            
 }
 
+.form__input {
+    padding: 6px;
+    border: 1px solid var(--color-border-input);
+    letter-spacing: 1.1px;
+}
+
+.form__label {
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 15px;
+    display: inline-block;
+}
+.form__enlace {
+    color: var(--color-enlace);
+    font-weight: bold;
+    padding: 100px;
+    font-size: 12px;
+    margin-top: 50px;
+    line-height: 15px;
+    cursor: pointer;
+}
+
+.form__recordarme {
+    
+    transition: all .2s linear;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--color-border-input);
+    font-weight: bold;
+    padding: 80px;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+.form__btn {
+    padding: 6px 0;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-color: #0e1c36;
+    color: white;
+    font-size: 12px;
+    width: 150px;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    
+}
+
+.form__btn:hover {
+    background-color: #0e1c36;
+    transform: scale(1.1);
+}
 
 

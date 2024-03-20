@@ -33,7 +33,7 @@ const Login = () => {
         <div>
         <HeaderGuest />
         
-        <form onSubmit={handleSubmit} className="formulario">
+        <form onSubmit={handleSubmit} className="form">
 
             <label htmlFor="email">Correo electrónico</label>
             <input
@@ -52,6 +52,8 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 />
+               <button className="form__btn">INICIAR SESIÓN </button>
+                
         </form>
     </div>
     
