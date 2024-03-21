@@ -45,21 +45,28 @@ form {
     border: solid 10px var(--blue);
 }
 
-.reservar  {
-    margin: 2rem auto;
+.reservas button {
     width: 20rem;
     height: 6rem;
     background-color: var(--darkblue);
-    color: var(--white);
     font-weight: bold;
     text-transform: uppercase;
-    border-radius: 1rem;
+    text-decoration: none;
     font-size: 1.8rem;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    color: white;
+}
+
+.reservas {
+    margin: 2rem auto;
+    width: 20rem;
+    height: 6rem;
+    color: white;
+    font-size: 1.8rem;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
 }
 
-.reservar:hover {
+.reservas:hover {
     transform: scale(1.1);
 }

@@ -5,11 +5,11 @@ import './Header.css'
 function HeaderLoggedIn() {
     return (
         <header>
-            <section>
-                <img src="../assets/fituplogo.svg" alt="logo" />
-                <Link to="/">Nuestras instalaciones</Link>
-                <Link to="/TimeTable">Horarios</Link>
-                <Link to="/reservas">Reservas</Link>
+            <section className="selection">
+                <img className="logo" src="../assets/fituplogo.svg" alt="logo" />
+                <Link to="/" className="access">Nuestras instalaciones</Link>
+                <Link to="/TimeTable" className="access">Horarios</Link>
+                <Link to="/reservas" className="access">Reservas</Link>
             </section>
             <section>
                 <LoggedButtons />
