@@ -1,0 +1,58 @@
+.form {
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkblue);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+form input{
+    padding: 0.6rem;
+    border: 1px solid var(--color-border-input);
+    letter-spacing: 0.11rem;
+}
+
+.form__enlace {
+    color: var(--color-enlace);
+    font-weight: bold;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.form__recordarme {
+    color: var(--color-border-input);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+ form input[type="checkbox"]{
+    padding-right: 10rem;
+}
+
+.form__btn {
+    padding: 6px 0;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-color: #0e1c36;
+    color: white;
+    font-size: 12px;
+    width: 150px;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    
+}
+
+.form__btn:hover {
+    background-color: #0e1c36;
+    transform: scale(1.1);
+}
+
+

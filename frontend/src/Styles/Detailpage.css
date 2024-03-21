@@ -1,0 +1,60 @@
+.detailPage-main {
+  display: flex;
+  margin: 10rem auto;
+  justify-content: center;
+  gap: 5rem;
+  width: 80%;
+}
+
+
+
+.card-img {
+  width: 100%;
+  height: auto;
+  cursor: auto;
+}
+
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-right h1 {
+  font-size: 6.4rem;
+  color: var(--darkblue);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem;
+}
+
+.main-right p {
+  color: var(--darkblue);
+  font-size: 1.8rem;
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.btn-container{
+  margin: 0 auto;
+}
+
+.main-right button {
+  margin: 2rem auto;
+  width: 20rem;
+  height: 6rem;
+  background-color: var(--darkblue);
+  color: var(--white);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.main-right button:hover {
+  transform: scale(1.1);
+}
+ 

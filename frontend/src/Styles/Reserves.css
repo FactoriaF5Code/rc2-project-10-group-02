@@ -1,0 +1,72 @@
+main {
+    width: auto;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.chooseSala {
+    width: 50rem;
+    height: 3rem;
+}
+
+.chooseSalaButton {
+    background-color: var(--blue);
+    width: 100%;
+    height: 3rem;
+}
+
+.datePicker {
+    background-color: var(--blue);
+    width: 50rem;
+    height: 3rem;
+}
+
+.customDatePicker {
+    background-color: var(--blue);
+    width: 50rem;
+    height: 3rem;
+}
+
+.customDatePickerWrapper {
+    width: 50rem;
+}
+
+.customPopper {
+    border: solid 10px var(--blue);
+}
+
+.reservas button {
+    width: 20rem;
+    height: 6rem;
+    background-color: var(--darkblue);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+.reservas {
+    margin: 2rem auto;
+    width: 20rem;
+    height: 6rem;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.reservas:hover {
+    transform: scale(1.1);
+}
