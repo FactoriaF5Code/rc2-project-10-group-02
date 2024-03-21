@@ -38,6 +38,7 @@ const Login = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
+          className="blue-input"
         />
 
         <label htmlFor="password">Contraseña</label>
@@ -47,6 +48,7 @@ const Login = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
+          className="blue-input"
         />
         <button className="form__btn">INICIAR SESIÓN </button>
         <div class="form__opciones">

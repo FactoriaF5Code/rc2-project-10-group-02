@@ -1,5 +1,5 @@
 import { Card } from "./Card";
-import "./HomepageMain.css";
+import "../Styles/HomepageMain.css";
 import jsonData from "../data/data.json";
 
 export const HomepageMain = () => {

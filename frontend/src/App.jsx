@@ -4,16 +4,15 @@ import Router from "react-router-dom";
 function App() {
   return (
     <Router>
-      <h1>HOLA SOCIOS QUE PAGÁIS Y NO VENÍS NUNCA</h1>
-      <Link to="/">HomePage</Link>
-      <Link to="/login">Login</Link>
-      <Link to="/register">Register</Link>
-      <Link to="/nombresala">Detalle Sala</Link>  
-      <Link to="/reservas">Pagina reserva</Link>
-      <Link to="/horario">Horario</Link>
-      <Link to="/misreservas">Mis Reservas</Link>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/timetable" element={<TimeTable />} />
+        <Route path="/detail/:title" element={<DetailPage />} />
+        <Route path="/reservas" element={<Reserves />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
     </Router>
   );
 }
 export default App;
-
