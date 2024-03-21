@@ -5,6 +5,10 @@ import { Homepage } from "./pages/Homepage";
 import DetailPage from "./pages/Detailpage";
 import { Reserves } from "./pages/Reserves";
 import Login from "./pages/Login";
+import Login from "./pages/Login";
+import DetailPage from "./pages/Detailpage";
+import { Reserves } from "./pages/Reserves";
+
 function App() {
   return (
     <Router>
@@ -18,5 +22,5 @@ function App() {
     </Router>
   );
 }
-
 export default App;
+
