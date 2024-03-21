@@ -1,4 +1,4 @@
-import "./Card.css";
+import "../Styles/Card.css";
 import { Link, useLocation } from "react-router-dom";
 
 export const Card = ({ title, imageUrl }) => {
@@ -13,10 +13,18 @@ export const Card = ({ title, imageUrl }) => {
         </div>
       )}
       {isDetailPage ? (
-        <img src={imageUrl} alt={"imágen de " + title} className="card-img-details" />
+        <img
+          src={imageUrl}
+          alt={"imágen de " + title}
+          className="card-img-details"
+        />
       ) : (
         <Link to={`/detail/${title}`}>
-          <img src={imageUrl} alt={"imágen de " + title} className="card-img-homepage" />
+          <img
+            src={imageUrl}
+            alt={"imágen de " + title}
+            className="card-img-homepage"
+          />
         </Link>
       )}
     </div>

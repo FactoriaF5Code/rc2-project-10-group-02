@@ -1,10 +1,6 @@
-import '../Styles/Register.css'
+import "../Styles/Register.css";
 const Register = () => {
-  return (
-    <div>
-      Victor
-    </div>
-  )
-}
+  return <div>Victor</div>;
+};
 
-export default Register
+export default Register;

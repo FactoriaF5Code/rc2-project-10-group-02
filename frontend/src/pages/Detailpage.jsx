@@ -25,7 +25,7 @@ const DetailPage = () => {
           <h1>{title}</h1>
           <p>{description}</p>
           <Link to="/reservas" className="btn-container">
-            <button >Reservar</button>
+            <button>Reservar</button>
           </Link>
         </div>
       </div>
