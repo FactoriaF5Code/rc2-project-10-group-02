@@ -4,15 +4,16 @@ import TimeTable from "./pages/TimeTable";
 import { Homepage } from "./pages/Homepage";
 import DetailPage from "./pages/Detailpage";
 import { Reserves } from "./pages/Reserves";
-
+import Login from "./pages/Login";
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/TimeTable" element={<TimeTable />}  />
-        <Route path="/detail/:title" element={<DetailPage/>}/>
+        <Route path="/timeTable" element={<TimeTable />} />
+        <Route path="/detail/:title" element={<DetailPage />} />
         <Route path="/reservas" element={<Reserves />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
