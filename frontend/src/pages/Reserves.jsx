@@ -47,7 +47,7 @@ export const Reserves = () => {
 
                     </label>
                     <div className="reservas">
-                        <button><Link to="/reserve" >Reservar</Link> </button>
+                        <button><Link to="/reserve" className="reservas" >Reservar</Link> </button>
                     </div>
                 </form>
 
