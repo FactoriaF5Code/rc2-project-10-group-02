@@ -1,5 +1,11 @@
 import "./App.css";
-import Router from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import TimeTable from "./pages/TimeTable";
+import { Homepage } from "./pages/Homepage";
+import DetailPage from "./pages/Detailpage";
+import { Reserves } from "./pages/Reserves";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
