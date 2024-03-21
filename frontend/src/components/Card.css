@@ -4,15 +4,20 @@
   border-radius: 1rem 1rem 0 0;
   overflow: hidden;
   position: relative;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
 }
 
-.card-img {
+.card-img-homepage{
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
+
+.card-img-details{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 
 .card-text {
   position: absolute;
@@ -33,10 +38,16 @@
 }
 
 .card-text p {
-    position: relative;
-    color: var(--darkblue);
-    font-size: 1.4rem;
-    font-weight: bold;
-    line-height: 4.5rem;
-    text-align: center;
-  }
+  position: relative;
+  color: var(--darkblue);
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 4.5rem;
+  text-align: center;
+}
+
+
+
+
+
+
