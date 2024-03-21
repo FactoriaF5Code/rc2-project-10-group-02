@@ -20,5 +20,8 @@ html {
   --blue: #afcbff;
   --darkblue: #0e1c36;
   --black: #222823;
+  --color-titulo: #afcbff;
+  --color-border-input: #030303;
+  --color-enlace: #ef4242;
   --myfont: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
