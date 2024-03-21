@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import "./Detailpage.css";
+import "../Styles/Detailpage.css";
 import jsonData from "../data/data.json";
 import { Card } from "../components/Card";
 import HeaderGuest from "../components/HeaderGuest";

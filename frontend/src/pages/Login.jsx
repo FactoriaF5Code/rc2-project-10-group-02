@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Login.css";
+import "../Styles/Login.css";
 import HeaderGuest from "../components/HeaderGuest";
 
 const Login = () => {
