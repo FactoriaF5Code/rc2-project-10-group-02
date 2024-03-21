@@ -1,5 +1,5 @@
 package com.fitup.backend.persistence;
 
-public class SalaRepository {
+public class SiteRepository {
     
 }
