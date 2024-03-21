@@ -7,39 +7,51 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="Site")
+@Table(name = "Site")
 public class Site {
       @Id
-      private UUID id_site;
+      private UUID id;
+
       private String name;
-      private String image_url;
+      private String imageUrl;
       private String description;
 
-      
-      public UUID getId_site() {
-            return id_site;
+      // Constructor vacío requerido por JPA
+      public Site() {
       }
-      public void setId_site(UUID id_site) {
-            this.id_site = id_site;
+
+      public Site(String name, String imageUrl, String description) {
+            this.id = UUID.randomUUID();
+            this.name = name;
+            this.imageUrl = imageUrl;
+            this.description = description;
       }
+
+      public UUID getId() {
+            return id;
+      }
+
       public String getName() {
             return name;
       }
+
       public void setName(String name) {
             this.name = name;
       }
-      public String getImage_url() {
-            return image_url;
+
+      public String getImageUrl() {
+            return imageUrl;
       }
-      public void setImage_url(String image_url) {
-            this.image_url = image_url;
+
+      public void setImageUrl(String imageUrl) {
+            this.imageUrl = imageUrl;
       }
+
       public String getDescription() {
             return description;
       }
+
       public void setDescription(String description) {
             this.description = description;
-      } 
+      }
 }
-
-

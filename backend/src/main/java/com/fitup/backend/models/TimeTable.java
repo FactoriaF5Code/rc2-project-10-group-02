@@ -3,36 +3,45 @@ package com.fitup.backend.models;
 import java.time.LocalTime;
 import java.util.UUID;
 
-import org.springframework.data.annotation.Id;
-
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "TimeTable")
 public class TimeTable {
     @Id
-    private UUID id_timetable;
-    private LocalTime start_time;
-    private LocalTime end_time;
+    private UUID id;
 
-    
-    public UUID getId_timetable() {
-        return id_timetable;
+    private LocalTime startTime;
+    private LocalTime endTime;
+
+    public TimeTable() {
     }
-    public void setId_timetable(UUID id_timetable) {
-        this.id_timetable = id_timetable;
+
+    public TimeTable(LocalTime startTime, LocalTime endTime) {
+        this.id = UUID.randomUUID();
+        this.startTime = startTime;
+        this.endTime = endTime;
     }
-    public LocalTime getStart_time() {
-        return start_time;
+
+    public UUID getId() {
+        return id;
     }
-    public void setStart_time(LocalTime start_time) {
-        this.start_time = start_time;
+
+    public LocalTime getStartTime() {
+        return startTime;
     }
-    public LocalTime getEnd_time() {
-        return end_time;
+
+    public void setStartTime(LocalTime startTime) {
+        this.startTime = startTime;
     }
-    public void setEnd_time(LocalTime end_time) {
-        this.end_time = end_time;
+
+    public LocalTime getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(LocalTime endTime) {
+        this.endTime = endTime;
     }
 }

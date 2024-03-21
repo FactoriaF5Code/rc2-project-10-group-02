@@ -5,40 +5,53 @@ import java.util.UUID;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-@Entity
-@Table(name="Bookings")
-public class Booking {
-      @Id
-      private UUID id_booking;
-      private UUID id_timetable;
-      private UUID id_user;
-      private UUID id_sala;
 
-      
-    public UUID getId_booking() {
-        return id_booking;
+@Entity
+@Table(name = "Bookings")
+public class Booking {
+    @Id
+    private UUID id;
+
+    private UUID timetableId;
+    private UUID userId;
+    private UUID salaId;
+
+    // Constructor vacío requerido por JPA
+    public Booking() {
     }
-    public void setId_booking(UUID id_booking) {
-        this.id_booking = id_booking;
+
+    public Booking(UUID timetableId, UUID userId, UUID salaId) {
+        this.id = UUID.randomUUID();
+        this.timetableId = timetableId;
+        this.userId = userId;
+        this.salaId = salaId;
     }
-    public UUID getId_timetable() {
-        return id_timetable;
+
+    public UUID getId() {
+        return id;
     }
-    public void setId_timetable(UUID id_timetable) {
-        this.id_timetable = id_timetable;
+
+    public UUID getTimetableId() {
+        return timetableId;
     }
-    public UUID getId_user() {
-        return id_user;
+
+    public void setTimetableId(UUID timetableId) {
+        this.timetableId = timetableId;
     }
-    public void setId_user(UUID id_user) {
-        this.id_user = id_user;
+
+    public UUID getUserId() {
+        return userId;
     }
-    public UUID getId_sala() {
-        return id_sala;
+
+    public void setUserId(UUID userId) {
+        this.userId = userId;
     }
-    public void setId_sala(UUID id_sala) {
-        this.id_sala = id_sala;
+
+    public UUID getSalaId() {
+        return salaId;
+    }
+
+    public void setSalaId(UUID salaId) {
+        this.salaId = salaId;
     }
 }
-
-
