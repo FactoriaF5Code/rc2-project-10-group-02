@@ -12,36 +12,21 @@ public class Sala {
     @Id
     private UUID id;
 
-    private String classType;
-    private UUID userId;
     private UUID salaId;
-    private String startTime;
-    private String endTime;
+    private String name;
+    private String description;
+    private String url;
 
-    // Constructor vacío requerido por JPA
+    
     public Sala() {
     }
 
-    public Sala(UUID userId, UUID salaId, String classType, String startTime, String endTime) {
+    public Sala(UUID salaId, String name, String description, String url) {
         this.id = UUID.randomUUID();
         this.salaId = salaId;
-        this.userId = userId;
-        this.classType = classType;
-        this.startTime = startTime;
-        this.endTime = endTime;
-
-    }
-
-    public void setClassType(String classType) {
-        this.classType = classType;
-    }
-
-    public void setStartTime(String startTime) {
-        this.startTime = startTime;
-    }
-
-    public void setEndTime(String endTime) {
-        this.endTime = endTime;
+        this.name = name;
+        this.description = description;
+        this.url = url;
     }
 
     public UUID getId() {
@@ -56,20 +41,32 @@ public class Sala {
         this.salaId = salaId;
     }
 
-    public UUID getUserId() {
-        return userId;
+    public void setId(UUID id) {
+        this.id = id;
     }
 
-    public void setUserId(UUID userId) {
-        this.userId = userId;
+    public String getName() {
+        return name;
     }
-    public String getClassType() {
-        return classType;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    public String getStartTime() {
-        return startTime;
+
+    public String getDescription() {
+        return description;
     }
-    public String getEndTime() {
-        return endTime;
+
+    public void setDescription(String description) {
+        this.description = description;
     }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
 }

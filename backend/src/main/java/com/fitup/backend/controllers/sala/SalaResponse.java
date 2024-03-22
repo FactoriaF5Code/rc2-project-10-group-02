@@ -3,47 +3,61 @@ package com.fitup.backend.controllers.sala;
 import java.util.UUID;
 
 public class SalaResponse {
-    private UUID idSala;
-    private String classType;
-    private String startTime;
-    private String endTime;
+    private UUID salaId;
+    private String name;
+    private String description;
+    private String url;
+ 
 
-    public void setIdTimeTable(UUID idSala) {
-        this.idSala = idSala;
+    public SalaResponse(UUID salaId, String name, String description, String url) {
+       
+        this.salaId = salaId;
+        this.name = name;
+        this.description = description;
+        this.url = url;
     }
 
-    public void setClassType(String classType) {
-        this.classType = classType;
+
+    public UUID getSalaId() {
+        return salaId;
     }
 
-    public void setStartTime(String startTime) {
-        this.startTime = startTime;
+
+    public void setSalaId(UUID salaId) {
+        this.salaId = salaId;
     }
 
-    public void setEndTime(String endTime) {
-        this.endTime = endTime;
+
+    public String getName() {
+        return name;
     }
 
-    public SalaResponse(UUID idSala, String classType, String startTime, String endTime) {
-        this.idSala = idSala;
-        this.classType = classType;
-        this.startTime = startTime;
-        this.endTime = endTime;
+
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public UUID getIdSala() {
-        return idSala;
+
+    public String getDescription() {
+        return description;
     }
 
-    public String getClassType() {
-        return classType;
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public String getStartTime() {
-        return startTime;
+
+    public String getUrl() {
+        return url;
     }
 
-    public String getEndTime() {
-        return endTime;
+
+    public void setUrl(String url) {
+        this.url = url;
     }
+
+    
+
+ 
 }
